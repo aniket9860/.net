@@ -1,0 +1,51 @@
+﻿@model List<RationShop.Models.RSDB>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeUI</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div style="margin:20px">
+        <br />
+        <a href="/Login/SignOut" class="btn btn-danger">Logout</a>
+        <a href="/Shop/AddCustomer" class="btn btn-warning">Add Employee</a>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Ration No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Contact no</th>
+                    <th>Status</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+                @foreach (var Cust in Model)
+                {
+                    <tr>
+                        <td>@Cust.RationNo</td>
+                        <td>@Cust.PersonName</td>
+                        <td>@Cust.Age</td>
+                        <td>@Cust.ContactNo</td>
+                        <td>@Cust.Status</td>
+                        <td>@Cust.Role</td>
+              
+                        <td>
+                            <a class="btn btn-danger" href="/Shop/Approve/@Cust.RationNo">Approve</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

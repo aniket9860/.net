@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create New Customer</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid" style="padding:100px">
+        <form action="/Shop/Afteradd" method="POST" class="form-inline" role="form">
+            <br /><br /><br />
+            <center>
+                <div class="form-group">
+                    <label for="txtName" style="color:black">Enter Name</label>
+                    <input type="text" class="form-control" id="txtName" name="PersonName" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="age" style="color:black">Enter Age</label>
+                    <input type="number" class="form-control" id="age" name="Age" placeholder="Enter Your Age">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="color:black">Enter Contact No</label>
+                    <input type="text" class="form-control" id="contact" name="ContactNo" placeholder="Enter Your Contact No">
+                </div>
+
+                <div class="form-group">
+                    <label for="role" style="color:black">Enter Role</label>
+                    <input type="text" class="form-control" id="role" name="Role" placeholder="Enter Your Role">
+                </div>
+                <button type="submit" class="btn btn-primary">Add New Customer</button>
+            </center>
+        </form>
+    </div>
+</body>
+</html>

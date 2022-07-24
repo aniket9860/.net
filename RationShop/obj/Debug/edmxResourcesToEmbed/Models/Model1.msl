@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LabPracticeModelStoreContainer" CdmEntityContainer="LabPracticeEntities1">
+    <EntitySetMapping Name="RSDBs">
+      <EntityTypeMapping TypeName="LabPracticeModel.RSDB">
+        <MappingFragment StoreEntitySet="RSDB">
+          <ScalarProperty Name="RationNo" ColumnName="RationNo" />
+          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
